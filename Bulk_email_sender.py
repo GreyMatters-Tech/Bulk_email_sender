@@ -26,5 +26,5 @@ with open('csv file path', 'r') as csvfile:
         server.send_message(em)
         print("The message sent")
 
-server.closed()
+server.close()
 print("Done @GreyMatter_Bots")
