@@ -10,7 +10,7 @@ body_message = '' #type the message you want to send
 
 #connect to our outgoing mail SMTP server
 context = ssl.create_default_context()
-server = smtplib.SMTP_SSL('smtp.gmail.com', 'Port for SSL', context = context)
+server = smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context)
 
 server.login(sender, password)
 
